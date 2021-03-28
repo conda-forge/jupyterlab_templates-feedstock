@@ -1,5 +1,5 @@
 {% set name = "jupyterlab_templates" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ca7d254c918ebae25364ad324907f15b1133cc057e0c24712777587239a02223
+  sha256: 7ee348ea0318033fcbd9274658c418d6cadafe89e9b3197e89c97f1cfde3eaff
 
 build:
   number: 0
@@ -21,9 +21,10 @@ requirements:
     - nodejs
     - yarn
     - jupyter-packaging
+    - jupyterlab
   run:
     - python >=3.7
-    - jupyterlab >=1.0.0
+    - jupyterlab >=3.0.0
 
 test:
   imports:
