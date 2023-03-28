@@ -10,7 +10,7 @@ source:
   sha256: 6897f00d1ea5a4de114a5ea351e69fbe2373e2a328c5bfcd7a128620b7de36c1
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -31,15 +31,13 @@ test:
     - jupyterlab_templates
 
 about:
-  home: https://github.com/jpmorganchase/jupyterlab_templates
+  home: https://github.com/finos/jupyterlab_templates
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: Notebook templates
-
-  description: |
-    Notebook templates
-  dev_url: https://github.com/jpmorganchase/jupyterlab_templates
+  summary: Jupyter notebook templates
+  description: Jupyter notebook templates
+  dev_url: https://github.com/finos/jupyterlab_templates
 
 extra:
   recipe-maintainers:
