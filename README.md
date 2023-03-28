@@ -1,18 +1,17 @@
-About jupyterlab_templates
-==========================
-
-Home: https://github.com/jpmorganchase/jupyterlab_templates
-
-Package license: Apache-2.0
+About jupyterlab_templates-feedstock
+====================================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab_templates-feedstock/blob/main/LICENSE.txt)
 
-Summary: Notebook templates
+Home: https://github.com/finos/jupyterlab_templates
 
-Development: https://github.com/jpmorganchase/jupyterlab_templates
+Package license: Apache-2.0
 
-Notebook templates
+Summary: Jupyter notebook templates
 
+Development: https://github.com/finos/jupyterlab_templates
+
+Jupyter notebook templates
 
 Current build status
 ====================
