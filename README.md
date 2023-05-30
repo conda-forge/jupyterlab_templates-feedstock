@@ -31,6 +31,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-jupyterlab--templates-green.svg)](https://anaconda.org/conda-forge/jupyterlab-templates) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jupyterlab-templates.svg)](https://anaconda.org/conda-forge/jupyterlab-templates) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyterlab-templates.svg)](https://anaconda.org/conda-forge/jupyterlab-templates) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jupyterlab-templates.svg)](https://anaconda.org/conda-forge/jupyterlab-templates) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-jupyterlab_templates-green.svg)](https://anaconda.org/conda-forge/jupyterlab_templates) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jupyterlab_templates.svg)](https://anaconda.org/conda-forge/jupyterlab_templates) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyterlab_templates.svg)](https://anaconda.org/conda-forge/jupyterlab_templates) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jupyterlab_templates.svg)](https://anaconda.org/conda-forge/jupyterlab_templates) |
 
 Installing jupyterlab_templates
@@ -43,41 +44,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `jupyterlab_templates` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `jupyterlab-templates, jupyterlab_templates` can be installed with `conda`:
 
 ```
-conda install jupyterlab_templates
-```
-
-or with `mamba`:
-
-```
-mamba install jupyterlab_templates
-```
-
-It is possible to list all of the versions of `jupyterlab_templates` available on your platform with `conda`:
-
-```
-conda search jupyterlab_templates --channel conda-forge
+conda install jupyterlab-templates jupyterlab_templates
 ```
 
 or with `mamba`:
 
 ```
-mamba search jupyterlab_templates --channel conda-forge
+mamba install jupyterlab-templates jupyterlab_templates
+```
+
+It is possible to list all of the versions of `jupyterlab-templates` available on your platform with `conda`:
+
+```
+conda search jupyterlab-templates --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search jupyterlab-templates --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search jupyterlab_templates --channel conda-forge
+mamba repoquery search jupyterlab-templates --channel conda-forge
 
-# List packages depending on `jupyterlab_templates`:
-mamba repoquery whoneeds jupyterlab_templates --channel conda-forge
+# List packages depending on `jupyterlab-templates`:
+mamba repoquery whoneeds jupyterlab-templates --channel conda-forge
 
-# List dependencies of `jupyterlab_templates`:
-mamba repoquery depends jupyterlab_templates --channel conda-forge
+# List dependencies of `jupyterlab-templates`:
+mamba repoquery depends jupyterlab-templates --channel conda-forge
 ```
 
 
