@@ -6,17 +6,17 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 7bea071f933a50879ac08b52414fac9c413c50d6919fceca393f0841c1a74510
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - nodejs
     - yarn
@@ -24,10 +24,12 @@ requirements:
     - hatch-jupyter-builder
     - jupyterlab >=4,<5
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - jupyterlab >=4,<5
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - jupyterlab_templates
 
@@ -38,9 +40,9 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python
+        - python {{ python_min }}
       run:
-        - python
+        - python >={{ python_min }}
         - {{ pin_subpackage("jupyterlab_templates", exact=True) }}
 
 about:
