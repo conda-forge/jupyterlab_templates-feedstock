@@ -1,5 +1,5 @@
 {% set name = "jupyterlab_templates" %}
-{% set version = "0.5.2" %}
+{% set version = "0.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7bea071f933a50879ac08b52414fac9c413c50d6919fceca393f0841c1a74510
+  sha256: c7c68e61f8eaa6f0d69a9117e9945a3bdbf01ab425c51386c0027f85a8f6eae4
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
